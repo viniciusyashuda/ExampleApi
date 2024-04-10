@@ -1,8 +1,8 @@
-﻿using ExampleApiDio.Context;
-using ExampleApiDio.Entities;
+﻿using ExampleApi.Context;
+using ExampleApi.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ExampleApiDio.Controllers
+namespace ExampleApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -20,8 +20,8 @@ namespace ExampleApiDio.Controllers
             _context.SaveChanges();
 
             return CreatedAtAction(
-                nameof(GetById), 
-                new { id = contact.Id }, 
+                nameof(GetById),
+                new { id = contact.Id },
                 contact
             );
         }
@@ -40,7 +40,7 @@ namespace ExampleApiDio.Controllers
         [HttpGet("{name}")]
         public IActionResult GetByName(string name)
         {
-            var contacts = _context.Contacts.Where(contact => 
+            var contacts = _context.Contacts.Where(contact =>
                 contact.Name.Contains(name)
             );
 

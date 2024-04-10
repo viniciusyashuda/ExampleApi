@@ -1,7 +1,7 @@
-﻿using ExampleApiDio.Entities;
+﻿using ExampleApi.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace ExampleApiDio.Context
+namespace ExampleApi.Context
 {
     public class ContactContext : DbContext
     {

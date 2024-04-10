@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ExampleApiDio.Controllers
+namespace ExampleApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -15,7 +15,7 @@ namespace ExampleApiDio.Controllers
                 Time = DateTime.Now.ToShortTimeString()
             };
 
-           return Ok(obj);
+            return Ok(obj);
         }
 
         [HttpGet("Apresentar/{name}")]
@@ -25,7 +25,7 @@ namespace ExampleApiDio.Controllers
         {
             var message = $"Hello, my name is {name}";
 
-            return Ok(new {message});
+            return Ok(new { message });
         }
     }
 }

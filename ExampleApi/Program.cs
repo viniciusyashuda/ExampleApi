@@ -1,4 +1,4 @@
-using ExampleApiDio.Context;
+using ExampleApi.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

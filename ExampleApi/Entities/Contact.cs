@@ -1,4 +1,4 @@
-﻿namespace ExampleApiDio.Entities
+﻿namespace ExampleApi.Entities
 {
     public class Contact
     {
